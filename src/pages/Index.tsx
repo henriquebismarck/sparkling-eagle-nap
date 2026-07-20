@@ -15,11 +15,8 @@ const Index = () => {
   const { toast } = useToast();
 
   const handleBuyNow = () => {
-    toast.custom((t) => (
-      <div className="bg-primary text-primary-foreground px-4 py-2 rounded-lg shadow-lg">
-        eBook adquirido com sucesso! Verifique seu e-mail para download.
-      </div>
-    ));
+    // Navigate to the payment link
+    window.location.href = "https://pay.kiwify.com.br/hM8XPfb";
   };
 
   const handleGetContent = () => {
@@ -491,7 +488,7 @@ const Index = () => {
                   <span>Atualizações (caso disponíveis)</span>
                 </li>
               </ul>
-              <Button size="lg" variant="secondary" className="px-12 py-4 text-xl font-bold">
+              <Button size="lg" variant="secondary" className="px-12 py-4 text-xl font-bold" onClick={handleBuyNow}>
                 COMPRAR AGORA
               </Button>
             </div>
@@ -530,7 +527,7 @@ const Index = () => {
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Tenha acesso a um material organizado, com linguagem acessível e foco em contexto histórico, filosofia política e pensamento conservador.
           </p>
-          <Button size="lg" className="px-8 py-4 text-base font-semibold">
+          <Button size="lg" className="px-8 py-4 text-base font-semibold" onClick={handleBuyNow}>
             QUERO LER O EBOOK
           </Button>
         </div>
