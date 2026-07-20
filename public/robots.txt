@@ -1,14 +1,30 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
+# Robots.txt for A Direita eBook Landing Page
 User-agent: *
 Allow: /
+
+# Sitemap
+Sitemap: https://adireita.com.br/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 10
+
+# Disallow admin/private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Allow all important pages
+Allow: /$
+Allow: /#sobre
+Allow: /#beneficios
+Allow: /#conteudo
+Allow: /#sumario
+Allow: /#diferenciais
+Allow: /#depoimentos
+Allow: /#como-funciona
+Allow: /#bonus
+Allow: /#oferta
+Allow: /#faq
+Allow: /#cta-final

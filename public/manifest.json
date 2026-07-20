@@ -1,0 +1,42 @@
+{
+  "name": "A Direita - História, Princípios e Evolução do Conservadorismo",
+  "short_name": "A Direita",
+  "description": "eBook educativo sobre história e pensamento conservador. Conteúdo acadêmico, acessível e bem estruturado.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e3a5f",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/placeholder.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/placeholder.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "books", "reference"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Comprar eBook",
+      "short_name": "Comprar",
+      "description": "Adquirir o eBook A Direita",
+      "url": "https://pay.kiwify.com.br/hM8XPfb",
+      "icons": [{ "src": "/placeholder.svg", "sizes": "192x192" }]
+    }
+  ]
+}
