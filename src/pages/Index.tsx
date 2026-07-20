@@ -11,8 +11,15 @@ import { useToast } from "@/hooks/use-toast";
 import { showSuccess, showError } from "@/utils/toast";
 
 const Index = () => {
-  const goToPurchase = () => {
-    window.location.href = "https://pay.kiwify.com.br/hM8XPfb";
+  const [email, setEmail] = useState("");
+  const { toast } = useToast();
+
+  const handleBuyNow = () => {
+    toast.custom((t) => (
+      <div className="bg-primary text-primary-foreground px-4 py-2 rounded-lg shadow-lg">
+        eBook adquirido com sucesso! Verifique seu e-mail para download.
+      </div>
+    ));
   };
 
   const handleGetContent = () => {
@@ -163,7 +170,7 @@ const Index = () => {
               Descubra como surgiram as principais ideias do pensamento conservador, sua evolução histórica e sua influência em diferentes países por meio de um conteúdo acessível e bem estruturado.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button size="lg" className="px-8 py-4 text-base font-semibold" onClick={goToPurchase}>
+              <Button size="lg" className="px-8 py-4 text-base font-semibold" onClick={handleBuyNow}>
                 QUERO MEU EBOOK AGORA
               </Button>
               <Button variant="outline" size="lg" className="px-8 py-4 text-base font-semibold" onClick={handleGetContent}>
@@ -484,7 +491,7 @@ const Index = () => {
                   <span>Atualizações (caso disponíveis)</span>
                 </li>
               </ul>
-              <Button size="lg" variant="secondary" className="px-12 py-4 text-xl font-bold" onClick={goToPurchase}>
+              <Button size="lg" variant="secondary" className="px-12 py-4 text-xl font-bold">
                 COMPRAR AGORA
               </Button>
             </div>
@@ -523,7 +530,7 @@ const Index = () => {
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Tenha acesso a um material organizado, com linguagem acessível e foco em contexto histórico, filosofia política e pensamento conservador.
           </p>
-          <Button size="lg" className="px-8 py-4 text-base font-semibold" onClick={goToPurchase}>
+          <Button size="lg" className="px-8 py-4 text-base font-semibold">
             QUERO LER O EBOOK
           </Button>
         </div>
